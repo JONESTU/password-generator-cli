@@ -10,6 +10,6 @@ def make_password(user_entropy):
     random.shuffle(result_listed)
     return ''.join(result_listed)
 
-final_password = make_password(user_length)
+final_password = make_password(user_entropy)
 print(final_password)
 quit()
