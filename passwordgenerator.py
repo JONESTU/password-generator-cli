@@ -1,11 +1,11 @@
 import string
 import random
 
-user_length = int(input("Enter your password length: "))
+user_entropy = int(input("Enter a number: "))
 
-def make_password(user_length):
+def make_password(user_entropy):
     ascii_characters = string.printable
-    generated_result = ascii_characters * user_length
+    generated_result = ascii_characters * user_entropy
     result_listed = list(generated_result)
     random.shuffle(result_listed)
     return ''.join(result_listed)
